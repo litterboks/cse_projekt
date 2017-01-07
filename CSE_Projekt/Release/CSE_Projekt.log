@@ -1,0 +1,12 @@
+﻿  main.cpp
+main.cpp(219): warning C4244: "Initialisierung": Konvertierung von "int" in "GLfloat", möglicher Datenverlust
+main.cpp(220): warning C4244: "Initialisierung": Konvertierung von "int" in "GLfloat", möglicher Datenverlust
+  Mesh.cpp
+  MyVAO.cpp
+  Shader.cpp
+  Texture.cpp
+  Code wird generiert.
+  All 1017 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Codegenerierung ist abgeschlossen.
+  CSE_Projekt.vcxproj -> C:\Users\Martin\Documents\Visual Studio 2015\Projects\CSE_Projekt\Release\CSE_Projekt.exe
+  CSE_Projekt.vcxproj -> C:\Users\Martin\Documents\Visual Studio 2015\Projects\CSE_Projekt\Release\CSE_Projekt.pdb (Full PDB)
