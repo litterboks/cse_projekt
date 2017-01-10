@@ -75,7 +75,7 @@ void MyVAO::draw() const
 	glUniform1i(glGetUniformLocation(m_shader.m_program, "ourTexture"), 0);
 	m_shader.Use();
 	glBindVertexArray(m_vao);
-	glDrawArrays(GL_TRIANGLES, 0, m_size);
+	glDrawArrays(GL_TRIANGLES, 0, m_size/11);
 	glBindVertexArray(0);
 	glBindTexture(GL_TEXTURE_2D, 0);
 }

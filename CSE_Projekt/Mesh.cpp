@@ -62,7 +62,7 @@ void Mesh::innerDraw(MyVAO myVAO) const
 	myVAO.setTransformation(m_transformation);
 	if (!textures.empty())
 	{
-		myVAO.setTexture(textures.front().get().m_texture);
+		myVAO.setTexture(textures[0].get().m_texture);
 	}
 	else
 	{
@@ -109,16 +109,16 @@ void Mesh::draw() const
 	switch (m_lod)
 	{
 	case LOW:
-		innerDraw(vaos.at(0));
+		innerDraw(vaos[0]);
 		break;
 	case MED:
-		innerDraw(vaos.at(1));
+		innerDraw(vaos[1]);
 		break;
 	case HIGH:
-		innerDraw(vaos.at(2));
+		innerDraw(vaos[2]);
 		break;
 	default:
-		innerDraw(vaos.at(0));
+		innerDraw(vaos[0]);
 		break;
 	}
 }
