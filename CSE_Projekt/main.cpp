@@ -142,10 +142,9 @@ bool init()
 	shaders.push_back(Shader("VertexShader.glsl", "FragmentShader.glsl"));
 
 	//Data container in vertexdata.h
-	VertexData v;
-	vaos.push_back(MyVAO(shaders[0], &v.triangle[0], v.plane.size()));
-	vaos.push_back(MyVAO(shaders[0], &v.plane[0], v.plane.size()));
-	vaos.push_back(MyVAO(shaders[0], &v.cube[0], v.cube.size()));
+	vaos.push_back(MyVAO(shaders[0], &VertexData::cube[0], 33));
+	vaos.push_back(MyVAO(shaders[0], &VertexData::cube[0], 66));
+	vaos.push_back(MyVAO(shaders[0], &VertexData::cube[0], VertexData::cube.size()));
 
 	Mesh mesh(vaos[0], vaos[1], vaos[2]);
 	mesh.setTexture(textures[0]);
@@ -193,7 +192,6 @@ bool initGL()
 
 	//Initialize clear color
 	glClearColor(0.1f, 0.1f, 0.1f, 1.f);
-
 	cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
 	glm::vec3 cameraTarget = glm::vec3(0.0f, 0.0f, 0.0f);
 	glm::vec3 cameraDirection = glm::normalize(cameraPos - cameraTarget);

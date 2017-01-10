@@ -2,27 +2,8 @@
 #include <GL/glew.h>
 #include <vector>
 
-struct VertexData
+namespace VertexData
 {
-	std::vector<GLfloat> triangle =
-	{
-		//Position (3)		//normals			//color (3)		  //texcoords(2)
-		-0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, //lower left
-		0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f, //lower right
-		0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f //upper right
-	};
-
-	std::vector<GLfloat> plane =
-	{
-		//Position (3)		//normals			//color (3)		  //texcoords(2)
-		-0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, //lower left
-		0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f, //lower right
-		0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, //upper right
-		0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, //upper right
-		-0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f, 1.0f, 0.0f, 1.0f, //upper left
-		-0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f //lower left
-	};
-
 	std::vector<GLfloat> cube{
 		//Position (3)		//normals			//color (3)		  //texcoords(2)
 		//Backface
