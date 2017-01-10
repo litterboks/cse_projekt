@@ -105,7 +105,6 @@ GLuint loadDDS(const char* filename)
 Texture::Texture(char* path): m_height(0), m_width(0), m_channels(0)
 {
 	m_texture = loadDDS(path);
-	glBindTexture(GL_TEXTURE_2D, m_texture);
 }
 
 Texture::~Texture()
